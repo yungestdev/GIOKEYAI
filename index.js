@@ -7,6 +7,7 @@ console.log('%cHello there Welcome to GiokeyAI', `
   padding: 20px;
 `);
 var unknown = false
+var firefox = false
 function CheckBrowser() {
 
     if((navigator.userAgent.indexOf("Opera") || navigator.userAgent.indexOf('OPR')) != -1 ) 
@@ -28,19 +29,15 @@ function CheckBrowser() {
     }
     else if(navigator.userAgent.indexOf("Firefox") != -1 ) 
     {
-        console.log('Currently using Firefox');
+        firefox = true
+        if (firefox = true) {
+            window.location.replace("ErrorPage/firefox.html");
+        }
     }
     else if((navigator.userAgent.indexOf("MSIE") != -1 ) || (!!document.documentMode == true )) //IF IE > 10
     {
         console.log('Currently using IE'); 
     } 
-    else if(navigator.webdriver.indexOf("Bing") != -1)
-    {
-        unknown = true
-        if (unknown = true) {
-            window.location.replace("ErrorPage/Error403.html");
-        }
-    }
     else 
     {
         unknown = true
