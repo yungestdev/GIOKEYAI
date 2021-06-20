@@ -26,7 +26,7 @@ function CheckBrowser() {
     {
         console.log("Currently using Brave")
     }
-    else if(navigator.userAgent.indexOf("Firefox") != -1 ) 
+    else if(navigator.userAgent.indexOf("") != -1 ) 
     {
         console.log('Currently using Firefox');
     }
