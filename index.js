@@ -6,6 +6,8 @@ console.log('%cHello there Welcome to GiokeyAI', `
   margin: 40px;
   padding: 20px;
 `);
+
+$(document).bind('contextmenu',function(){return false;});
 var unknown = false
 var firefox = false
 function CheckBrowser() {
@@ -50,14 +52,11 @@ function CheckBrowser() {
 var errorBase = false
 CheckBrowser()
 
-    while (errorBase = false) {
-        if (errorBase == true) {
-            errorBase = true
-            err = "code 200";
-            console.warn(`${err}`)
 
-            errorcd = "error dHJvbGxlZA=="
+    errorBase = true
+    err = "code 200";
+    console.warn(`${err}`)
 
-            console.error(`${errorcd}`)
-        }
-    }
+    errorcd = "error dHJvbGxlZA=="
+
+    console.error(`${errorcd}`)
