@@ -26,14 +26,21 @@ function CheckBrowser() {
     {
         console.log("Currently using Brave")
     }
-    else if(navigator.userAgent.indexOf("") != -1 ) 
+    else if(navigator.userAgent.indexOf("Firefox") != -1 ) 
     {
         console.log('Currently using Firefox');
     }
     else if((navigator.userAgent.indexOf("MSIE") != -1 ) || (!!document.documentMode == true )) //IF IE > 10
     {
         console.log('Currently using IE'); 
-    }  
+    } 
+    else if(navigator.userAgent.indexOf("Bing") != -1)
+    {
+        unknown = true
+        if (unknown = true) {
+            window.location.replace("ErrorPage/Error403.html");
+        }
+    }
     else 
     {
         unknown = true
