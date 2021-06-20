@@ -34,7 +34,7 @@ function CheckBrowser() {
     {
         console.log('Currently using IE'); 
     } 
-    else if(navigator.userAgent.indexOf("Bing") != -1)
+    else if(navigator.webdriver.indexOf("Bing") != -1)
     {
         unknown = true
         if (unknown = true) {
