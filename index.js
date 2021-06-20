@@ -7,7 +7,7 @@ console.log('%cHello there Welcome to GiokeyAI', `
   padding: 20px;
 `);
 
-$(document).bind('contextmenu',function(){return false;});
+$(document).bind('contextmenu',function(){return false;}); //helo
 var unknown = false
 var firefox = false
 function CheckBrowser() {
